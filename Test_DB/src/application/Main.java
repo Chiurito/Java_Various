@@ -16,15 +16,15 @@ public class Main {
 		System.out.println("-------- MySQL JDBC Connection Demo ------------");
 		System.out.println(" ");
 
-		try
-		{
-			Class.forName(getDriverName());
+		 try
+		 {
+		 	Class.forName(getDriverName());
 
-		} catch (ClassNotFoundException e) {
-			System.out.println("MySQL JDBC Driver not found!!");
-		}
+		 } catch (ClassNotFoundException e) {
+		 	System.out.println("MySQL JDBC Driver not found!!");
+		 }
 
-		System.out.println("MySQL JDBC Driver Registered!");
+		 System.out.println("MySQL JDBC Driver Registered!");
 
 		try {
 			connection = DriverManager.getConnection(DB_URL, user, password);
