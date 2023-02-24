@@ -24,7 +24,7 @@ public class Main {
 			System.out.println("SQL Connection to database established!");
 
 		} catch (SQLException e) {
-			System.out.println("Connection Failed! Check output console");
+			System.out.println("Connection Failed! Check output console...");
 		} finally {
 			try
 			{
