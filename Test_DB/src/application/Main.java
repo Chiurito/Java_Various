@@ -14,7 +14,7 @@ public class Main {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} 
 		catch (ClassNotFoundException e) {
-			System.out.println("MySQL JDBC Driver not found !!");
+			System.out.println("MySQL JDBC Driver not found!!");
 			return;
 		}
 		System.out.println("MySQL JDBC Driver Registered!");
