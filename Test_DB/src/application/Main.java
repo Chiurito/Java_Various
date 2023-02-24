@@ -6,12 +6,17 @@ import java.sql.SQLException;
 
 public class Main {
 
+	static String driverName = "com.mysql.cj.jdbc.Driver";
+	static String DB_URL = "jdbc:mysql://localhost:3306/users";
+	static String user = "root";
+	static String password = "password";
+
 	public static void main(String[] args) {
 		System.out.println("-------- MySQL JDBC Connection Demo ------------");
 		System.out.println(" ");
 		try
 		{
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName(driverName);
 		} 
 		catch (ClassNotFoundException e) {
 			System.out.println("MySQL JDBC Driver not found!!");
@@ -20,7 +25,7 @@ public class Main {
 		System.out.println("MySQL JDBC Driver Registered!");
 		Connection connection = null;
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "password");
+			connection = DriverManager.getConnection(DB_URL, user, password);
 			System.out.println("SQL Connection to database established...");
 
 		} catch (SQLException e) {
