@@ -21,7 +21,7 @@ public class Main {
 		Connection connection = null;
 		try {
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "password");
-			System.out.println("SQL Connection to database established!");
+			System.out.println("SQL Connection to database established...");
 
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console...");
